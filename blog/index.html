@@ -129,14 +129,23 @@
         <div class="nav-wrapper">
             <a href="./" class="logo" aria-label="Notary Aimee homepage">
                 <div class="logo-icon">A</div>
-                <div class="logo-text">Notary Aimee<small>Aimee M. Skillin</small></div>
+                <div class="logo-text">
+                    Notary Aimee
+                    <small>Aimee M. Skillin</small>
+                </div>
             </a>
-            <button class="mobile-toggle" aria-label="Open navigation menu" onclick="document.getElementById('mainNav').classList.toggle('active')">
-                <span></span><span></span><span></span>
+
+            <button class="mobile-toggle" aria-label="Open navigation menu" aria-expanded="false" onclick="toggleNav()">
+                <span></span>
+                <span></span>
+                <span></span>
             </button>
-            <nav id="mainNav">
-                <a href="./">Home</a>
+
+            <nav role="navigation" aria-label="Main navigation" id="mainNav">
+                <a href="./#about">About</a>
                 <a href="./#services">Services</a>
+                <a href="./#areas">Areas Served</a>
+                <a href="./#faq">FAQ</a>
                 <a href="blog" style="color:var(--gold)">Blog</a>
                 <a href="vip-workshop">VIP Workshop</a>
                 <a href="resources">Resources</a>
@@ -333,6 +342,6 @@
     </footer>
 
     <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 4l-8 8h5v8h6v-8h5z"/></svg></button>
-    <script>var scrollBtn=document.getElementById('scrollToTop');window.addEventListener('scroll',function(){scrollBtn.classList.toggle('visible',window.scrollY>400)});scrollBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});</script>
+    <script>function toggleNav(){var n=document.getElementById("mainNav");var b=document.querySelector(".mobile-toggle");n.classList.toggle("active");b.setAttribute("aria-expanded",n.classList.contains("active"))}var scrollBtn=document.getElementById('scrollToTop');window.addEventListener('scroll',function(){scrollBtn.classList.toggle('visible',window.scrollY>400)});scrollBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});</script>
 </body>
 </html>
