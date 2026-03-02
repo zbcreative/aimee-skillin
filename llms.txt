@@ -10,6 +10,7 @@
 - Loan Signing Agent (NNA & LSS trained, real estate closings, mortgage transactions, refinances)
 - General Notary Services (acknowledgments, jurats, oaths, affirmations, copy certifications, IPEN)
 - Attorneys & Legal Professionals (wills & estates, immigration, family law, court documents)
+- VIP Business Systems Development Workshop (one-day intensive business coaching and systems-building session for notaries, solopreneurs, and service-based professionals; in-person in Lone Tree, CO or virtual via Google Meet)
 
 ## Credentials
 - Colorado State Commissioned Notary Public
@@ -37,8 +38,18 @@ RON: Available worldwide (valid U.S. government-issued ID required).
 - Lone Tree, CO 80124
 - Website: https://www.conotarypublic.com/
 
+## Blog
+Articles published at https://www.conotarypublic.com/blog/
+
+- "What Is an Apostille? Your Complete Guide to the Apostille Process" (July 14, 2023) — Explains what an apostille is, when it is required, how to obtain one in Colorado, and which countries accept apostilles under the Hague Convention.
+- "Language Skills That Seal the Deal: Why Collaborating with a Bilingual Notary Boosts Your Business Success" (June 16, 2023) — Covers the business and legal advantages of working with a bilingual (English/Spanish) notary, particularly for real estate agents and legal professionals serving Spanish-speaking clients.
+- "Notary vs. Notario: What's the Difference and Why It Matters" (June 2, 2023) — Explains the important legal distinction between a U.S. Notary Public and a Latin American Notario Publico, and why confusion between the two can lead to serious legal problems.
+
+## Resources
+The Resources page (https://www.conotarypublic.com/resources/) is a curated directory of tools and links for notary professionals and Colorado residents. It includes: Aimee's personally recommended tools (Loan Signing System, Notary Gadget, Pactima for RON, Sticker Mule, Google Workspace), Colorado government resources (Secretary of State, Apostille Services, Notary Handbook), professional organizations (NNA, LSS), guides for residents (Hague Apostille Convention, acceptable ID, RON, common documents), and resources for Colorado notary business owners (getting started, insurance, training).
+
 ## Pages
 - Home: https://www.conotarypublic.com/
-- Blog: https://www.conotarypublic.com/blog.html
-- VIP Workshop: https://www.conotarypublic.com/vip-workshop.html
-- Resources: https://www.conotarypublic.com/resources.html
+- Blog: https://www.conotarypublic.com/blog/
+- VIP Workshop: https://www.conotarypublic.com/vip-workshop/
+- Resources: https://www.conotarypublic.com/resources/
