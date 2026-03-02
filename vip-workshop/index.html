@@ -110,9 +110,11 @@
         .page-hero { background: linear-gradient(135deg, var(--navy) 0%, var(--navy-deep) 100%); padding: 80px 0; position: relative; overflow: hidden; }
         .page-hero::before { content: ''; position: absolute; inset: 0; background-image: radial-gradient(rgba(154,184,247,0.04) 1px, transparent 1px); background-size: 40px 40px; pointer-events: none; }
         .page-hero .container { position: relative; z-index: 1; max-width: 800px; text-align: center; }
-        .page-hero h1 { font-family: var(--font-display); font-size: clamp(2rem, 4.5vw, 3rem); color: white; margin-bottom: 16px; font-weight: 700; }
+        .page-hero h1 { font-family: var(--font-display); font-size: clamp(1.5rem, 3vw, 2.2rem); color: white; margin-bottom: 16px; font-weight: 700; white-space: nowrap; }
         .page-hero h1 .gold { color: var(--gold); }
         .page-hero p { color: rgba(255,255,255,0.7); font-size: 1.15rem; max-width: 640px; margin: 0 auto; }
+        .hero-tagline { font-family: var(--font-display); font-style: italic; font-size: clamp(2.6rem, 6.5vw, 4.8rem); color: var(--gold); margin: 8px 0 32px; letter-spacing: 0.5px; line-height: 1.2; }
+        .hero-divider { width: 60px; height: 2px; background: rgba(154,184,247,0.4); margin: 0 auto 24px; border: none; }
 
         /* CONTENT */
         .content-section { padding: 80px 0; }
@@ -160,6 +162,20 @@
         .footer-credit a { color: var(--gold); font-weight: 500; }
         .footer-credit a:hover { color: var(--gold-light); }
         .footer-disclaimer { font-size: 0.78rem; color: rgba(255,255,255,0.3); max-width: 700px; line-height: 1.5; margin-top: 16px; }
+
+        /* TESTIMONIALS */
+        .testimonials-section { padding: 80px 0; background: var(--cream); }
+        .testimonial-card { background: white; border: 1px solid var(--border-subtle); border-radius: var(--radius-lg); padding: 48px; max-width: 860px; margin: 0 auto; position: relative; box-shadow: var(--shadow-md); }
+        .testimonial-card::before { content: '\201C'; font-family: var(--font-display); font-size: 7rem; color: var(--gold-pale); line-height: 1; position: absolute; top: 12px; left: 32px; pointer-events: none; }
+        .testimonial-text { font-size: 1.08rem; line-height: 1.85; color: var(--slate); position: relative; z-index: 1; }
+        .testimonial-text p { margin-bottom: 16px; }
+        .testimonial-text p:last-child { margin-bottom: 0; }
+        .testimonial-attribution { margin-top: 28px; padding-top: 24px; border-top: 1px solid var(--border-subtle); display: flex; align-items: center; gap: 16px; }
+        .testimonial-attribution-text strong { display: block; color: var(--navy); font-family: var(--font-display); font-size: 1.05rem; margin-bottom: 2px; }
+        .testimonial-attribution-text span { font-size: 0.9rem; color: var(--slate-light); }
+        .testimonial-attribution-text a { color: var(--gold); font-weight: 600; }
+        .testimonial-attribution-text a:hover { color: var(--gold-light); }
+        .testimonial-stars { color: #f6c90e; font-size: 1.1rem; letter-spacing: 2px; margin-bottom: 20px; }
 
         /* SCROLL TOP */
         .scroll-to-top { position: fixed; bottom: 32px; right: 32px; width: 48px; height: 48px; background: var(--gold); color: var(--navy-deep); border: none; border-radius: 50%; display: flex; align-items: center; justify-content: center; cursor: pointer; box-shadow: var(--shadow-md); z-index: 999; opacity: 0; visibility: hidden; transform: translateY(12px); transition: all var(--transition); }
@@ -225,7 +241,9 @@
         <section class="page-hero">
             <div class="container">
                 <span class="section-label">VIP Workshop</span>
-                <h1>Business Systems Development Workshop<br><span class="gold">Foundations, Frameworks &amp; Freedom</span></h1>
+                <h1>Business Systems Development Workshop</h1>
+                <p class="hero-tagline">Foundations, Frameworks &amp; Freedom</p>
+                <hr class="hero-divider">
                 <p>Stop guessing and start building. Walk away with a crystal-clear, actionable framework you can implement Monday morning.</p>
             </div>
         </section>
@@ -330,6 +348,31 @@
                         <div class="feature-icon">📝</div>
                         <h3>Monday-Ready Action Plan</h3>
                         <p>You won't leave with vague ideas. You'll leave with a step-by-step plan you can start executing the very next business day.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- TESTIMONIAL -->
+        <section class="testimonials-section">
+            <div class="container">
+                <div style="text-align:center; max-width:720px; margin:0 auto 48px;">
+                    <span class="section-label">Client Experience</span>
+                    <h2 class="section-title">What VIP Day Clients Are Saying</h2>
+                </div>
+                <div class="testimonial-card">
+                    <div class="testimonial-stars">★★★★★</div>
+                    <div class="testimonial-text">
+                        <p>I wish I had words for my experience with Aimee on my VIP Day… I had met Aimee a handful of times and could instantly tell she was a rockstar at her craft. She was knowledgeable, confident, and, the most impressive part, completely self-taught. I was excited to meet with her and learn more. Once she told me about what she had to offer with an 8-hour Business Systems Development session, I was ALL IN.</p>
+                        <p>I have to admit, I have met TONS of business coaches, consultants, or whatever the latest hip terminology is. This felt different right away, and trust me when I say it is. I love the fact that it was all done in one day. This felt much more productive and like I could retain what was covered.</p>
+                        <p>Here is the biggest takeaway…unlike anyone I've ever met, Aimee doesn't just ask questions, give advice, and send you on your way. Aimee leaves you with TOOLS and SYSTEMS that you can instantly implement, and I mean implement the following day.</p>
+                        <p>This session changed the trajectory of my life and my business. I am forever grateful to Aimee and the Saturday I spent with her. I would spend this money again tenfold for what I received. Cannot recommend enough! Feel free to call me if you want to verify these results. I'd be happy to explain more.</p>
+                    </div>
+                    <div class="testimonial-attribution">
+                        <div class="testimonial-attribution-text">
+                            <strong>Morgan McKelvy</strong>
+                            <span>TOM CRM and Referral Systems &nbsp;·&nbsp; <a href="tel:+13037102373">(303) 710-2373</a></span>
+                        </div>
                     </div>
                 </div>
             </div>
