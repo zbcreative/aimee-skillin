@@ -122,6 +122,20 @@
 
         @media(max-width:768px){nav{display:none;position:absolute;top:72px;left:0;right:0;background:var(--navy);padding:20px;flex-direction:column;border-top:1px solid rgba(255,255,255,0.1);box-shadow:var(--shadow-lg)}nav.active{display:flex}nav a{padding:12px 16px;width:100%}.mobile-toggle{display:block}.blog-grid{grid-template-columns:1fr}.blog-article{padding:28px 24px}.blog-sidebar{position:static}.footer-inner{flex-direction:column;text-align:center}.footer-links{flex-wrap:wrap;justify-content:center}.footer-bottom{flex-direction:column;text-align:center}}
     </style>
+
+    <!-- Google Analytics 4 (consent-gated) -->
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        function loadGA4(){
+            var s = document.createElement('script');
+            s.async = true;
+            s.src = 'https://www.googletagmanager.com/gtag/js?id=G-RW7X245DGE';
+            document.head.appendChild(s);
+            s.onload = function(){ gtag('js', new Date()); gtag('config', 'G-RW7X245DGE'); };
+        }
+        if(localStorage.getItem('cookieConsent') === 'accepted'){ loadGA4(); }
+    </script>
 </head>
 <body>
 
@@ -329,6 +343,7 @@
                     <a href="/#services">Services</a>
                     <a href="/vip-workshop">VIP Workshop</a>
                     <a href="/resources">Resources</a>
+                    <a href="/privacy-policy/">Privacy Policy</a>
                     <a href="https://www.facebook.com/notarizewithaimee/" target="_blank" rel="noopener noreferrer">Facebook</a>
                     <a href="https://www.linkedin.com/in/aimeeskillin/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
                 </div>
@@ -343,5 +358,28 @@
 
     <button class="scroll-to-top" id="scrollToTop" aria-label="Scroll to top"><svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 4l-8 8h5v8h6v-8h5z"/></svg></button>
     <script>function toggleNav(){var n=document.getElementById("mainNav");var b=document.querySelector(".mobile-toggle");n.classList.toggle("active");b.setAttribute("aria-expanded",n.classList.contains("active"))}var scrollBtn=document.getElementById('scrollToTop');window.addEventListener('scroll',function(){scrollBtn.classList.toggle('visible',window.scrollY>400)});scrollBtn.addEventListener('click',function(){window.scrollTo({top:0,behavior:'smooth'})});</script>
+
+    <!-- Cookie Consent Banner -->
+    <div id="cookieBanner" style="display:none;position:fixed;bottom:0;left:0;right:0;z-index:9999;background:var(--navy-deep);color:rgba(255,255,255,0.85);padding:20px 24px;box-shadow:0 -4px 24px rgba(0,0,0,0.25);">
+        <div style="max-width:1200px;margin:0 auto;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;">
+            <p style="margin:0;font-size:0.92rem;font-family:var(--font-body);flex:1;min-width:220px;">We use cookies to understand how visitors use our site and to improve your experience. <a href="/privacy-policy/" style="color:var(--gold);font-weight:600;text-decoration:underline;">Read our Privacy Policy</a>.</p>
+            <div style="display:flex;gap:12px;flex-shrink:0;">
+                <button onclick="handleConsent('declined')" style="padding:10px 20px;border-radius:var(--radius);font-family:var(--font-body);font-weight:600;font-size:0.9rem;cursor:pointer;background:transparent;border:1px solid rgba(255,255,255,0.3);color:rgba(255,255,255,0.75);">Decline</button>
+                <button onclick="handleConsent('accepted')" style="padding:10px 20px;border-radius:var(--radius);font-family:var(--font-body);font-weight:600;font-size:0.9rem;cursor:pointer;background:var(--gold);color:var(--navy-deep);border:none;">Accept Cookies</button>
+            </div>
+        </div>
+    </div>
+    <script>
+        (function(){
+            if(!localStorage.getItem('cookieConsent')){
+                document.getElementById('cookieBanner').style.display = 'block';
+            }
+        })();
+        function handleConsent(choice){
+            localStorage.setItem('cookieConsent', choice);
+            document.getElementById('cookieBanner').style.display = 'none';
+            if(choice === 'accepted' && typeof loadGA4 === 'function'){ loadGA4(); }
+        }
+    </script>
 </body>
 </html>
