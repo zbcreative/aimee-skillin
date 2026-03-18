@@ -41,6 +41,7 @@ RON: Available worldwide (valid U.S. government-issued ID required).
 ## Blog
 Articles published at https://www.conotarypublic.com/blog/
 
+- "Essential Knowledge for Notary Public Assignments" (March 18, 2026) — Standalone article at https://www.conotarypublic.com/blog/essential-notary-assignments/ covering scope of authority, ID, completing notarial acts, journals, bonds and E&O insurance, fees, and best practices (general, not state-specific; readers should follow their state handbook).
 - "What Is an Apostille? Your Complete Guide to the Apostille Process" (July 14, 2023) — Explains what an apostille is, when it is required, how to obtain one in Colorado, and which countries accept apostilles under the Hague Convention.
 - "Language Skills That Seal the Deal: Why Collaborating with a Bilingual Notary Boosts Your Business Success" (June 16, 2023) — Covers the business and legal advantages of working with a bilingual (English/Spanish) notary, particularly for real estate agents and legal professionals serving Spanish-speaking clients.
 - "Notary vs. Notario: What's the Difference and Why It Matters" (June 2, 2023) — Explains the important legal distinction between a U.S. Notary Public and a Latin American Notario Publico, and why confusion between the two can lead to serious legal problems.
@@ -51,5 +52,6 @@ The Resources page (https://www.conotarypublic.com/resources/) is a curated dire
 ## Pages
 - Home: https://www.conotarypublic.com/
 - Blog: https://www.conotarypublic.com/blog/
+- Blog article — Essential Knowledge for Notary Public Assignments: https://www.conotarypublic.com/blog/essential-notary-assignments/
 - VIP Workshop: https://www.conotarypublic.com/vip-workshop/
 - Resources: https://www.conotarypublic.com/resources/
